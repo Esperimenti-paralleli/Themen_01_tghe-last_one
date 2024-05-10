@@ -1,11 +1,5 @@
-# Themen_01
+# Grundlagen Prozedurale Programmierung 
 
-## Setup Programmierumgebung
+## Inhalte / [Links im Wiki](https://github.com/01-PP-ComCaveDD/Themen_01/wiki)
 
-- Testen, ob node.js vorhanden ist: node -v
- Testen, ob npm vorhanden ist: npm --v
-- Projekt initialisieren: npm init -y
-- Ordner src anlegen
-- Im Ordner Datei hello_world.js anlegen
-- Pfad zu "main" in package.json aktualisieren
-- Ausgabe Testen console.log("Hello, world!") / node .
+
