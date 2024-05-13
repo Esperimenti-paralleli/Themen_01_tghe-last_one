@@ -56,16 +56,36 @@
 // Postulat: one function = one job (uncle Bob)
 // SRP single responsibility principle --> "refactoring"
 
-outputNamesSRP("Maxine", "Mützerisch");
+// outputNamesSRP("Maxine", "Mützerisch");
 
 function outputNamesSRP(firstName, familyName) {  // Parameter
 
-    // 1. Funktionalität: string composing
+//     1. Funktionalität: string composing
     const GAP = " ";
 let outputStr = "Hallo, " + firstName + GAP + familyName +"!"
 
+// // 2. Funktionalität: string output
+// console.log(outputStr); 
+
+}
+
+/***** Funktionen 03b *****/
+
+output(getString("Maxine", "Mütze"));
+//     1. Funktionalität: string composing
+function getString(firstName, familyName) {
+    const GAP = " ";
+    let outputStr = "Hallo, " + firstName + GAP + familyName +"!"
+    return outputStr;
+}
+
 // 2. Funktionalität: string output
-console.log(outputStr); 
+output("hi");
+output(2); 
+output(true);
+
+function output(outputData) {
+console.log(outputData);
 
 }
 
