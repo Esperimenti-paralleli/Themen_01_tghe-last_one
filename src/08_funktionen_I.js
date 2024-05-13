@@ -15,11 +15,16 @@ function test()
 /***** Funktionen 02a *****/
 // 2a. Parametrisierung + Datenübergabe von INNEN
 
-// Funktionsrumpf
-outputNames();
+// Funktionaufruf
+// outputNames();
 
 // Funktionsdeklaration
-function outputNames() {
-    console.log("Hallo, Esther!"); 
+function outputNames() 
+{
+    // interne Variable | What happens in VEGAS ...
+    let firstName = "Jan";
+  console.log("Hallo, " + firstName + "!"); 
 }
+
+// console.log(firstName); // Fehler : scope!
 
